@@ -5,7 +5,7 @@
     <title></title>
   </head>
   <body>
-    <form action="/bookmarks/<=% @bookmark_id %>" method="post">
+    <form action="/bookmarks/<%= @bookmark_id %>" method="post">
       <input type="hidden" name="_method" value="PATCH">
       <input type="text" name="url" placeholder="url">
       <input type="text" name="title" placeholder="title">

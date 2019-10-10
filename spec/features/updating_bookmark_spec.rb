@@ -13,7 +13,7 @@ feature 'updating bookmark' do
     click_button 'Submit'
 
     expect(current_path).to eq "/bookmarks"
-    expect(page).to have_link("Google", href: "https://www.google.com")
-    expect(page).not_to have_link("YouTube", href: "https://www.youtube.com")
+    expect(page).not_to have_link("Google", href: "https://www.google.com")
+    expect(page).to have_link("YouTube", href: "https://www.youtube.com")
   end
 end
